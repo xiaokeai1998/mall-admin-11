@@ -18,7 +18,7 @@
               <el-table-column prop="label"  align="center"label="编号" width="60" ></el-table-column>
               <el-table-column prop="caltName"  align="center" label="分类名称"> </el-table-column>
               <el-table-column prop="numberUnit" align="center" label="属性数量"></el-table-column>
-              <el-table-column prop="sort" align="center" label="参数数量"></el-table-column>
+              <el-table-column prop="sort" align="center" @click="handelCategorList()" label="参数数量"></el-table-column>
               <el-table-column align="center" width="200" label="设置">
                  <template slot-scope="scope">
                     <el-button @click="handelClickRoute()" size="mini">属性列表</el-button>
@@ -29,7 +29,6 @@
                  <template slot-scope="scope">
                     <el-button
                     size="mini"
-                    @click="centerDialogVisible = true"
                    >编辑</el-button>
                     <el-button
                     size="mini"
@@ -107,6 +106,11 @@ export default {
     handelClickRoute () {
         this.$router.push("/pms/productAttrList");
     },
+    // 跳转到商品属性列表
+    handelCategorList(){
+      console.log("额鹅鹅鹅")
+        this.$router.push("/pms/addPorductEdit")
+    }
    
 }
 }

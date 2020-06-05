@@ -51,6 +51,11 @@ export default new Router({
         path:"productAttrList",
         name:"productAttrList",
         component:() => import("@/views/pms/productAttr/addPorductAttrList")
+      },
+      {
+        path:"addPorductEdit",
+        name:"addPorductEdit",
+        component:() => import("@/views/pms/productAttr/addPorductEdit")
       }
     ]
 

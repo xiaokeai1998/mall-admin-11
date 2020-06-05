@@ -50,7 +50,7 @@
                  <template slot-scope="scope">
                     <el-button
                     size="mini"
-                    @click="centerDialogVisible = true"
+                    @click="handelClickEndit()"
                    >编辑</el-button>
                     <el-button
                     size="mini"
@@ -128,7 +128,9 @@ export default {
     handelShopProductAdd () {
         this.$router.push("/pms/addProductCate");
     },
-   
+   handelClickEndit(){
+     this.$router.push("/pms/addProductCate")
+   }
 }
 }
 

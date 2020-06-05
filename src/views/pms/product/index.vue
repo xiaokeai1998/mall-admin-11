@@ -89,7 +89,7 @@
              <el-table-column width="170" align="center" label="操作">
             <template  slot-scope="scope">
               <el-button style="margin:10px 0" size="mini" >查看</el-button>
-              <el-button style="margin:10px 0" size="mini"  type="danger" >编辑</el-button>
+              <el-button style="margin:10px 0" size="mini" type="danger" >编辑</el-button>
               <el-button style="margin:10px 0" size="mini" >日志</el-button>
               <el-button style="margin:10px 0" size="mini" >删除</el-button>
             </template>
@@ -144,6 +144,9 @@ export default {
       },
       handelClickAdd(){
           this.$router.push({path:"/pms/addProduct"});
+      },
+      handelClickedint(){
+        this.$router.push({path:"/pms/addProduct"})
       }
     },
 }
